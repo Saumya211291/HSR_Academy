@@ -217,10 +217,7 @@
             };
             fetch('https://script.google.com/macros/s/AKfycbzh1CD_usqsJziYL7-77AoS479B3ahn6wHVHHpNNhvQCd2xmYNK91tidnry5DuAntTlqg/exec', {
                 method: 'POST',
-                body: JSON.stringify(data),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
+                body: JSON.stringify(data)
             })
             .then(response => response.json())
             .then(result => {
